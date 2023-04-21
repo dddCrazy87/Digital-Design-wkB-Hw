@@ -26,7 +26,7 @@ byte segs[10][7] = { { 0,0,0,0,0,0,1 },
 
 void show(byte n) {
   
-  for (byte seg = 0, pin = 2; seg < 7; seg++, ++pin) {
+  for (byte seg = 0, pin = 2; seg < 7; seg++, pin++) {
     digitalWrite(pin, segs[n][seg]);
   }
 }
